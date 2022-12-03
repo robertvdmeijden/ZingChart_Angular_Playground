@@ -1,0 +1,37 @@
+<nav class="navbar">
+  <h1>
+    <a [routerLink]="['/']">ZingChart Angular Playground</a>
+  </h1>
+  <ul>
+    <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+      <a [routerLink]="['/']">Simple</a>
+    </li>
+    <li routerLinkActive="active">
+      <a routerLink="/graphset">Graphset</a>
+    </li>
+    <li routerLinkActive="active">
+      <a routerLink="/module-chart">Module Chart</a>
+    </li>
+    <li routerLinkActive="active">
+      <a [routerLink]="['/dynamic']">Dynamic</a>
+    </li>
+    <li routerLinkActive="active">
+      <a [routerLink]="['/events']">Events</a>
+    </li>
+    <li routerLinkActive="active">
+      <a [routerLink]="['/methods']">Methods</a>
+    </li>
+    <li routerLinkActive="active">
+      <a [routerLink]="['/ajax-performance']">Ajax/Performance</a>
+    </li>
+    <li routerLinkActive="active">
+      <a [routerLink]="['/licensing']">Licensing</a>
+    </li>
+  </ul>
+</nav>
+
+<div class="container">
+  <div class="card">
+    <router-outlet></router-outlet>
+  </div>
+</div>
